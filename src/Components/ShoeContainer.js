@@ -3,12 +3,9 @@ import ShoeList from './ShoeList'
 import axios from 'axios'
 
 class ShoeContainer extends Component {
-    // constructor (props) {
-    //     super(props)
-    // }
     state = {
         shoes: []
-        // currentIndex: 4
+        // currentIndex: 
     }
 
 //Assisted by Kevon

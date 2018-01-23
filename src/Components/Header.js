@@ -1,9 +1,9 @@
 import React from 'react'
 
 const Header = () => (
-    <nav className="nav-wrapper black lighten-3">
-        <div className="container">
-            <a href="/" className="brand-logo left">Sneak-life</a>
+    <nav>
+        <div>
+            <a href="/" className="logo">Sneak-life</a>
         </div>
     </nav>
 )

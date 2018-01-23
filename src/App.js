@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import logo from './logo.svg'
 import './App.css'
-import Header from './header'
-import ShoeContainer from './ShoeContainer'
+import Header from './Components/Header'
+import ShoeContainer from './Components/ShoeContainer'
 
 class App extends Component {
   render() {

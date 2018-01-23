@@ -1,26 +1,40 @@
-import React from 'react'
-import Shoe-List from './Shoe-List'
+import React, {Component} from 'react'
+import ShoeList from './ShoeList'
 import axios from 'axios'
 
 class ShoeContainer extends Component {
+    // constructor (props) {
+    //     super(props)
+    // }
     state = {
-        shoes: [],
-        currentIndex: 4
+        shoes: []
+        // currentIndex: 4
     }
-}
 
-// componentDidMount
+//Assisted by Kevon
+    componentDidMount () {
+        axios.get('https://safe-gorge-55726.herokuapp.com/sneakers')
+        .then(response => this.setState({shoes:response.data}))
+    }
 
 render () {
-    let shoe = this.state.shoes[this.state.currentIndex]
+    let shoes = this.state.shoes
     return (
         <div>
             <main>
                 <div className='container'>
-                {shoe &&
-                <Shoe-List list={shoe}}
+                {
+                    this.state.shoes.map((shoe, shoeIndex) => {
+                        return <li key={shoeIndex}>{shoe.brand} {shoe.name}</li>
+                    })
+                }
+                {/* <ShoeList /> */}
                 </div>
+                {/* console.log("ShoeList") */}
             </main>
         </div>
         )
      }
+}
+
+export default ShoeContainer

@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+// import React, { Component } from 'react'
 
-class Individual extends Component {
-    render() {
-        return (
-            <div>
-                <ul>
-                    <li>
-        )
-    }
-}
+// class Individual extends Component {
+//     render() {
+//         return (
+//             <div>
+//                 <ul>
+//                     <li>
+//         )
+//     }
+// }
